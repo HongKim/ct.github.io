@@ -9,29 +9,6 @@
 		stroke-width:1.5;
 		stroke-linecap:round;
 		stroke-linejoin:round;
-		animation-name: rotate;
-  		animation-duration: 4s;
-		animation-delay: 0;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		transform-origin: center;
-	}
-	@keyframes rotate {
-		0% {
-			-webkit-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-		50% {
-			-webkit-transform: rotate(30deg);
-			-o-transform: rotate(30deg);
-			transform: rotate(30deg);
-		}
-		100% {
-			-webkit-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
 	}
 	.st1{
 		fill:#FFFFFF;
@@ -47,7 +24,7 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateY;
-		animation-duration: 1.5s;
+		animation-duration: 2s;
 		animation-delay: 0;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
@@ -55,9 +32,9 @@
 	}
 	@keyframes translateY {
 		0% {
-			-webkit-transform: translateY(-2%);
-			-o-transform: translateY(-2%);
-			transform: translateY(-2%);
+			-webkit-transform: translateY(-3%);
+			-o-transform: translateY(-3%);
+			transform: translateY(-3%);
 		}
 		50% {
 			-webkit-transform: translateY(2%);
@@ -65,9 +42,9 @@
 			transform: translateY(2%);
 		}
 		100% {
-			-webkit-transform: translateY(-2%);
-			-o-transform: translateY(-2%);
-			transform: translateY(-2%);
+			-webkit-transform: translateY(-3%);
+			-o-transform: translateY(-3%);
+			transform: translateY(-3%);
 		}
 	}
 </style>

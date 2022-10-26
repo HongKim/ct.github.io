@@ -10,9 +10,9 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateX1;
-		animation-duration: 2s;
+		animation-duration: 4s;
 		animation-delay: 0;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in;
 		animation-iteration-count: infinite;
 		transform-origin: 100% 0;
 	}
@@ -40,9 +40,9 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateX2;
-		animation-duration: 2s;
+		animation-duration: 4s;
 		animation-delay: 0;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in;
 		animation-iteration-count: infinite;
 		transform-origin: 100% 0;
 	}
@@ -70,9 +70,9 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateX3;
-		animation-duration: 2s;
+		animation-duration: 4s;
 		animation-delay: 0;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in;
 		animation-iteration-count: infinite;
 		transform-origin: 100% 0;
 	}
@@ -96,7 +96,7 @@
 	.st3{
 		fill:#222222;
 		animation-name: rotateZ1;
-		animation-duration: 4s;
+		animation-duration: 10s;
 		animation-delay: 0;
 		animation-timing-function: linear; 
 		animation-iteration-count: infinite;
@@ -117,7 +117,7 @@
 	.st4{
 		fill:#222222;
 		animation-name: rotateZ2;
-		animation-duration: 8s;
+		animation-duration: 12s;
 		animation-delay: 0;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;

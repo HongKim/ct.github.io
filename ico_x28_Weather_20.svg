@@ -10,7 +10,7 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateX;
-		animation-duration: 4s;
+		animation-duration: 6s;
 		animation-delay: 0;
 		animation-timing-function: ease;
 		animation-iteration-count: infinite;
@@ -24,7 +24,7 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateX;
-		animation-duration: 4s;
+		animation-duration: 6s;
 		animation-delay: 0;
 		animation-timing-function: ease-in;
 		animation-iteration-count: infinite;
@@ -38,7 +38,7 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateX;
-		animation-duration: 4s;
+		animation-duration: 6s;
 		animation-delay: 0;
 		animation-timing-function: ease-out;
 		animation-iteration-count: infinite;

@@ -13,7 +13,7 @@
 	.st1{
 		fill:#222222;
 		animation-name: rotateX;
-		animation-duration: 1.5s;
+		animation-duration: 3s;
 		animation-delay: 0;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
@@ -27,9 +27,9 @@
 			opacity: 1;
 		}
 		50% {
-			-webkit-transform: rotateX(45deg);
-			-o-transform: rotateX(45deg);
-			transform: rotateX(45deg);
+			-webkit-transform: rotateX(30deg);
+			-o-transform: rotateX(30deg);
+			transform: rotateX(30deg);
 			opacity: .5;
 		}
 		100% {

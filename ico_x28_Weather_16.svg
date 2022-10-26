@@ -16,29 +16,12 @@
 		stroke-width:1.5;
 		stroke-linecap:round;
 		stroke-linejoin:round;
-		animation-name: rotateX1;
-		animation-duration: 2s;
+		animation-name: rotateX;
+		animation-duration: 3s;
 		animation-delay: 0;
-		animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in;
 		animation-iteration-count: infinite;
 		transform-origin: 100% 0;
-	}
-	@keyframes rotateX1 {
-		0% {
-			-webkit-transform: rotateX(0);
-			-o-transform: rotateX(0);
-			transform: rotateX(0);
-		}
-		50% {
-			-webkit-transform: rotateX(40deg);
-			-o-transform: rotateX(40deg);
-			transform: rotateX(40deg);
-		}
-		100% {
-			-webkit-transform: rotateX(0);
-			-o-transform: rotateX(0);
-			transform: rotateX(0);
-		}
 	}
 	.st2{
 		fill:none;
@@ -46,23 +29,23 @@
 		stroke-width:1.5;
 		stroke-linecap:round;
 		stroke-linejoin:round;
-		animation-name: rotateX2;
-		animation-duration: 1.5s;
+		animation-name: rotateX;
+		animation-duration: 3s;
 		animation-delay: 0;
-		animation-timing-function: ease-in-out;
+		animation-timing-function: linear;
 		animation-iteration-count: infinite;
 		transform-origin: 100% 0;
 	}
-	@keyframes rotateX2 {
+	@keyframes rotateX {
 		0% {
 			-webkit-transform: rotateX(0);
 			-o-transform: rotateX(0);
 			transform: rotateX(0);
 		}
 		50% {
-			-webkit-transform: rotateX(20deg);
-			-o-transform: rotateX(20deg);
-			transform: rotateX(20deg);
+			-webkit-transform: rotateX(25deg);
+			-o-transform: rotateX(25deg);
+			transform: rotateX(25deg);
 		}
 		100% {
 			-webkit-transform: rotateX(0);

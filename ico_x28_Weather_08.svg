@@ -17,7 +17,7 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: translateY;
-		animation-duration: 1.5s;
+		animation-duration: 2s;
 		animation-delay: 0;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;

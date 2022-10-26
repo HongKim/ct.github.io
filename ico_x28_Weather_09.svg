@@ -12,80 +12,46 @@
 	}
 	.st1{
 		fill:#222222;
-		animation-name: translateY1;
-		animation-duration: 1.5s;
+		animation-name: translateY;
+		animation-duration: 2.5s;
 		animation-delay: 0;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
 		transform-origin: center;
-	}
-	@keyframes translateY1 {
-		0% {
-			-webkit-transform: translateY(-3%);
-			-o-transform: translateY(-3%);
-			transform: translateY(-3%);
-		}
-		50% {
-			-webkit-transform: translateY(3%);
-			-o-transform: translateY(3%);
-			transform: translateY(3%);
-		}
-		100% {
-			-webkit-transform: translateY(-3%);
-			-o-transform: translateY(-3%);
-			transform: translateY(-3%);
-		}
 	}
 	.st2{
 		fill:#222222;
-		animation-name: translateY2;
-		animation-duration: 1.5s;
+		animation-name: translateY;
+		animation-duration: 2.5s;;
 		animation-delay: 0;
-		animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in;
 		animation-iteration-count: infinite;
 		transform-origin: center;
-	}
-	@keyframes translateY2 {
-		0% {
-			-webkit-transform: translateY(-3%);
-			-o-transform: translateY(-3%);
-			transform: translateY(-3%);
-		}
-		50% {
-			-webkit-transform: translateY(6%);
-			-o-transform: translateY(6%);
-			transform: translateY(6%);
-		}
-		100% {
-			-webkit-transform: translateY(-3%);
-			-o-transform: translateY(-3%);
-			transform: translateY(-3%);
-		}
 	}
 	.st3{
 		fill:#222222;
-		animation-name: translateY3;
-		animation-duration: 1.5s;
+		animation-name: translateY;
+		animation-duration: 2.5s;
 		animation-delay: 0;
-		animation-timing-function: ease-in-out;
+		animation-timing-function: ease-out;
 		animation-iteration-count: infinite;
 		transform-origin: center;
 	}
-	@keyframes translateY3 {
+	@keyframes translateY {
 		0% {
-			-webkit-transform: translateY(-3%);
-			-o-transform: translateY(-3%);
-			transform: translateY(-3%);
+			-webkit-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
 		}
 		50% {
-			-webkit-transform: translateY(9%);
-			-o-transform: translateY(9%);
-			transform: translateY(9%);
+			-webkit-transform: translateY(5%);
+			-o-transform: translateY(5%);
+			transform: translateY(5%);
 		}
 		100% {
-			-webkit-transform: translateY(-3%);
-			-o-transform: translateY(-3%);
-			transform: translateY(-3%);
+			-webkit-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
 		}
 	}
 </style>
