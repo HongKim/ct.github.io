@@ -40,12 +40,45 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 	}
+	.st2{
+		fill:none;
+		stroke:#222222;
+		stroke-width:1.5;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		animation-name: translateY;
+		animation-duration: 1.5s;
+		animation-delay: 0;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		transform-origin: center;
+	}
+	@keyframes translateY {
+		0% {
+			-webkit-transform: translateY(-2%);
+			-o-transform: translateY(-2%);
+			transform: translateY(-2%);
+		}
+		50% {
+			-webkit-transform: translateY(2%);
+			-o-transform: translateY(2%);
+			transform: translateY(2%);
+		}
+		100% {
+			-webkit-transform: translateY(-2%);
+			-o-transform: translateY(-2%);
+			transform: translateY(-2%);
+		}
+	}
 </style>
 <g>
-	<path class="st0" d="M10.6,12.3H8.6 M26.4,12.3h-1.9 M10.6,12.3H8.6 M23.5,8.8l1.6-0.9 M9.9,16.7l1.6-0.9 M21,6.3l0.9-1.6 M13.1,20
-		l0.9-1.6 M17.5,5.4V3.4 M17.5,21.2v-1.9 M14,6.3l-0.9-1.6 M21.9,20L21,18.3 M11.5,8.8L9.9,7.9 M25.2,16.7l-1.6-0.9 M22.5,12.3
+	<path class="st0" d="M10.6,12.3h-2 M26.4,12.3h-1.9 M10.6,12.3h-2 M23.5,8.8l1.6-0.9 M9.9,16.7l1.6-0.9 M21,6.3l0.9-1.6 M13.1,20
+		l0.9-1.6 M17.5,5.4v-2 M17.5,21.2v-1.9 M14,6.3l-0.9-1.6 M21.9,20L21,18.3 M11.5,8.8L9.9,7.9 M25.2,16.7l-1.6-0.9 M22.5,12.3
 		c0,2.8-2.2,5-5,5s-5-2.2-5-5s2.2-5,5-5l0,0C20.3,7.3,22.5,9.5,22.5,12.3z"/>
 </g>
-<path class="st1" d="M6.6,23.7c-2.6,0.1-4.7-1.9-4.8-4.5c-0.1-2.3,1.5-4.3,3.8-4.7c1-3.5,4.7-5.5,8.2-4.5c2.6,0.7,4.4,3,4.7,5.6
-	c2.2,0.2,3.8,2.3,3.6,4.5c-0.2,2.1-2,3.7-4.2,3.6L6.6,23.7z"/>
+<g>
+	<path class="st1" d="M17.6,23.5h0.3c2.2,0.1,4-1.6,4-3.8c0.1-2-1.5-3.8-3.5-4c-0.4-3.5-3.6-6-7.1-5.6c0,0,0,0,0,0
+		c-2.5,0.3-4.7,2.1-5.4,4.5c-2.4,0.4-4,2.8-3.6,5.2c0.4,2.1,2.1,3.6,4.2,3.7"/>
+	<path class="st2" d="M8.2,25.3l2.4-4.1 M11.5,24.5l2.4-4.1 M13.3,26.5l2.4-4.1"/>
+</g>
 </svg>

@@ -10,7 +10,7 @@
 		stroke-linecap:round;
 		stroke-linejoin:round;
 		animation-name: rotate;
-  		animation-duration: 1s;
+  		animation-duration: 1.5s;
 		animation-delay: 0;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
@@ -52,9 +52,9 @@
 			transform: translateY(0);
 		}
 		50% {
-			-webkit-transform: translateY(10%);
-			-o-transform: translateY(10%);
-			transform: translateY(10%);
+			-webkit-transform: translateY(5%);
+			-o-transform: translateY(5%);
+			transform: translateY(5%);
 		}
 		100% {
 			-webkit-transform: translateY(0);
