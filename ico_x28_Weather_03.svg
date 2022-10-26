@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{
+		fill:none;
+		stroke:#F7C744;
+		stroke-width:1.5;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		animation-name: rotate;
+  		animation-duration: 2s;
+		animation-delay: 0;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		transform-origin: center;
+	}
+	@keyframes rotate {
+		0% {
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		50% {
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		100% {
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+	}
+	.st1{
+		fill:#FFFFFF;
+		stroke:#222222;
+		stroke-width:1.5;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		animation-name: translateY1;
+  		animation-duration: 1.5s;
+		animation-delay: 0;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		transform-origin: center;
+	}
+	@keyframes translateY1 {
+		0% {
+			-webkit-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+		}
+		50% {
+			-webkit-transform: translateY(10%);
+			-o-transform: translateY(10%);
+			transform: translateY(10%);
+		}
+		100% {
+			-webkit-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+		}
+	}
+	.st2{
+		fill:#FFFFFF;
+		stroke:#222222;
+		stroke-width:1.5;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		animation-name: translateY2;
+  		animation-duration: 1.5s;
+		animation-delay: 0;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		transform-origin: center;
+	}
+	@keyframes translateY2 {
+		0% {
+			-webkit-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+		}
+		50% {
+			-webkit-transform: translateY(5%);
+			-o-transform: translateY(5%);
+			transform: translateY(5%);
+		}
+		100% {
+			-webkit-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+		}
+	}
+</style>
+<g>
+	<path class="st0" d="M12.2,12.9h-1.8 M27.1,12.9h-1.8 M12.2,12.9h-1.8 M24.4,9.7L26,8.8 M11.5,17.1l1.5-0.9 M22,7.3l0.9-1.5
+		 M14.6,20.2l0.9-1.5 M18.7,6.4V4.6 M18.7,21.3v-1.8 M15.4,7.3l-0.9-1.5 M22.9,20.2L22,18.6 M13,9.7l-1.5-0.9 M26,17.1l-1.5-0.9
+		 M23.5,12.9c0,2.6-2.1,4.7-4.7,4.7S14,15.6,14,12.9s2.1-4.7,4.7-4.7l0,0C21.4,8.2,23.5,10.3,23.5,12.9z"/>
+</g>
+<path class="st2" d="M4.2,17.9c-1.8,0.1-3.3-1.4-3.4-3.2c0-1.6,1.1-3,2.7-3.3c0.7-2.5,3.3-3.9,5.8-3.2c1.8,0.5,3.1,2.1,3.3,4
+	c1.6,0.2,2.7,1.6,2.5,3.2c-0.2,1.5-1.4,2.6-2.9,2.6L4.2,17.9z"/>
+<path class="st1" d="M8.3,23.7c-2.4,0.1-4.4-1.8-4.5-4.3c-0.1-2.2,1.5-4.1,3.6-4.4c1-3.3,4.4-5.2,7.7-4.2c2.4,0.7,4.2,2.8,4.4,5.3
+	c2.1,0.2,3.6,2.1,3.4,4.2c-0.2,2-1.9,3.5-3.9,3.4L8.3,23.7z"/>
+</svg>
