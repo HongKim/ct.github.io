@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+html, body {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+.overlay{
+    background: url(../../images/ftd.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.15;
+}
+.memeWrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.memeItem{
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+}
+.link{
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    position: absolute;
+    top: 15px;
+    right: 9px;
+    z-index: 2;
+    font-size: 0;
+    text-indent: -999em;
+    background: #363a45 url(../../images/home.png) 50% 50% no-repeat;
+    background-size: 12px;
+}
+.memeItem>.symbol{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 2;
+    box-shadow: -1px 15px 30px -12px #000;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+}
+.memeItem img{
+    width: 100%;
+}
+.memeItem:nth-child(odd)>.symbol{
+  transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  animation: gelatine 0.65s infinite;
+}
+.memeItem:nth-child(even)>.symbol{
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: gelatine2 0.85s infinite;
+}
+.sr-only{
+    text-indent: -9999em;
+    font-size: 0;
+}
+.emo{
+    position: absolute;
+    top: auto;
+    left: 50%;
+    z-index: 3; 
+    display: none;
+}
+.emo.yes{
+    width: 110px;
+    height: 96px;
+    background: url(../../images/yes.png) 50% 50% no-repeat;
+    background-size: 110px;
+    top: 10px;
+    margin-left: -100px;
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: jittery 1.5s infinite;
+}
+.emo.no{
+    width: 110px;
+    height: 95px;
+    background: url(../../images/no.png) 50% 50% no-repeat;
+    background-size: 110px;
+    top: -5px;
+    margin-left: -45px;
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: jittery 1.5s infinite;
+}
+.emo.angry{
+    width: 120px;
+    height: 105px;
+    background: url(../../images/angry.png) 50% 50% no-repeat;
+    background-size: 120px;
+    top: -10px;
+    margin-left: -45px;
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: jittery 1.5s infinite;
+}
+.emo.happy{
+    width: 140px;
+    height: 124px;
+    background: url(../../images/happy.png) 50% 50% no-repeat;
+    background-size: 140px;
+    top: -30px;
+    margin-left: -60px;
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: jittery 1.5s infinite;
+}
+@keyframes jittery {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-8deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(8deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-2deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
+@keyframes gelatine {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+@keyframes gelatine2 {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1.1, 0.9);
+    }
+    50% {
+      transform: scale(0.9, 1.1);
+    }
+    75% {
+      transform: scale(1.05, 0.95);
+    }
+  }
+.memeCard {
+    margin-bottom: 40px;
+    background: #1e222d;
+    width: 100%;
+    display: block;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px #000;
+    z-index: 1;
+    padding: 7px 0 0;
+    overflow: hidden;
+}
+.mainWrap{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.logoArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.logo{
+    padding: 0;
+    margin: 40px 0 20px;
+    width: 200px;
+    position: relative;
+}
+.logo>img{
+    width: 100%;
+}
+.logo>.xMark{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 2;
+    width: 20%;
+    opacity: 1;
+    animation: xMark 3s infinite;
+}
+
+@keyframes xMark {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+.mainWrap h2{
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 800;
+    color: #FFF;
+    text-align: center;
+    padding: 0 30px;
+    margin: 0;
+}
+.mainWrap .imgArea{
+    width: 100%;
+}
+.mainWrap .imgArea .slideItem{
+    text-align: center;
+}
+.mainWrap .imgArea .slideItem>img{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+footer{
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+footer>h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0;
+}
+footer>p{
+    font-size: 24px;
+    font-weight: 600;
+}
+footer>.copy{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+@media (min-width: 360px){
+    .mainWrap h2{
+        font-size: 45px;
+    }
+    footer>h3{
+        font-size: 35px;
+    }
+}
+@media (min-width: 390px){
+    .mainWrap h2{
+        font-size: 50px;
+    }
+    footer>h3{
+        font-size: 40px;
+    }
+}
+@media (min-width: 768px){
+    .mainWrap{
+        padding: 20px;
+        flex-direction: row;
+    }
+    .memeItem{
+        width: calc(50% - 40px);
+    }
+    .logo{
+        width: 250px;
+    }
+    .mainWrap .logoArea{
+        width: 50%;
+    }
+    .mainWrap .imgArea{
+        width: 50%;
+    }
+    footer>p{
+        font-size: 26px;
+    }
+}
+@media (min-width: 1024px){
+    .logo{
+        width: 300px;
+    }
+}
+
+@media (min-width: 1200px){
+    .wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .mainWrap{
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        height: 100%;
+        padding: 60px 20px;
+    }
+    .memeWrap{
+        width: calc(100% - 30%);
+        padding: 30px 20px;
+        margin-left: 30%;
+    }
+    .logo{
+        width: 220px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .mainWrap h2{
+        padding: 0 20px;
+    }
+    .mainWrap .logoArea{
+        width: 100%;
+    }
+    .mainWrap .imgArea{
+        width: 100%;
+    }
+}
+@media (min-width: 1600px){
+    .memeItem{
+        width: calc(33.333% - 40px);
+    }
+    .mainWrap{
+        width: 25%;
+    }
+    .memeWrap{
+        width: calc(100% - 25%);
+        margin-left: 25%;
+    }
+    .mainWrap h2{
+        padding: 0 40px;
+    }
+    footer{
+        width: calc(70% - 50px);
+    }
+}
+
+.memeItem.w100{
+    width: calc(100% - 40px) !important;
+}
+.memeItem.w100 .memeCard{
+    margin-bottom: 0;
+    overflow: unset;
+    padding: 50px 30px;
+}
+.txtWrap{
+    color: #FFF;
+    margin-bottom: 40px;
+}
+.txtWrap>h3{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.txtWrap>p{
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+
+}
+@media (min-width:390px){
+    .txtWrap>h3{
+        font-size: 32px;
+    }
+    .txtWrap>p{
+        font-size: 20px;
+    
+    }
+}
+@media (min-width: 680px){
+    .txtWrap>h3{
+        font-size: 36px;
+    }
+    .txtWrap>p{
+        font-size: 22px;
+    
+    }
+}
+@media (min-width: 768px){
+    .memeItem.w100 .memeCard{
+        padding: 80px 40px;
+    }
+    .txtWrap>h3{
+        font-size: 38px;
+    }
+    .txtWrap>p{
+        font-size: 24px;
+    
+    }
+}
+.laptopBg{
+    max-width: 640px;
+    margin: 0 auto;
+}
+.laptopBg>img{
+    width: 100%;
+}
+.symbol2.doge{
+    background: url(../../images/doge.png) 50% 50% no-repeat;
+    bottom: 44%;
+    left: 24%;
+
+}
+.symbol2.shib{
+    background: url(../../images/shib.png) 50% 50% no-repeat;
+    bottom: 50%;
+    right: 26%;
+}
+.symbol2.dogwifhat{
+    background: url(../../images/dogwifhat.png) 50% 50% no-repeat;
+    bottom: 40%;
+    left: 10%;
+}
+.symbol2.floki{
+    background: url(../../images/floki.png) 50% 50% no-repeat;
+    bottom: 60%;
+    right: 17%;
+}
+.symbol2.bonk{
+    background: url(../../images/bonk.png) 50% 50% no-repeat;
+    bottom: 18%;
+    left: 18%;
+}
+.symbol2.corgiAI{
+    background: url(../../images/corgiAI.jpg) 50% 50% no-repeat;
+    bottom: 20%;
+    right: 15%;
+}
+.symbol2.babyDoge{
+    background: url(../../images/babyDoge.jpg) 50% 50% no-repeat;
+    bottom: 26%;
+    left: 30%;
+}
+.symbol2.mog{
+    background: url(../../images/mog.jpg) 50% 50% no-repeat;
+    bottom: 30%;
+    right: 22%;
+}
+.symbol2.samo{
+    background: url(../../images/samo.jpg) 50% 50% no-repeat;
+    bottom: 58%;
+    left: 15%;
+}
+.symbol2.poodl{
+    background: url(../../images/poodl.jpg) 50% 50% no-repeat;
+    bottom: 10%;
+    right: 28%;
+}
+.symbol2{
+    border-radius: 100%;
+    display: block;
+    background: #000;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+.symbol2.doge,.symbol2.shib,.symbol2.dogwifhat,.symbol2.floki,.symbol2.bonk,.symbol2.corgiAI,.symbol2.babyDoge,.symbol2.mog,.symbol2.samo,.symbol2.poodl{
+    background-size: 40px;
+}
+@media (min-width:390px){
+    .symbol2{
+        width: 50px;
+        height: 50px;
+    }
+    .symbol2.doge,.symbol2.shib,.symbol2.dogwifhat,.symbol2.floki,.symbol2.bonk,.symbol2.corgiAI,.symbol2.babyDoge,.symbol2.mog,.symbol2.samo,.symbol2.poodl{
+        background-size: 50px;
+    }
+}
+@media (min-width: 768px){
+    .symbol2{
+        width: 60px;
+        height: 60px;
+    }
+    .symbol2.doge,.symbol2.shib,.symbol2.dogwifhat,.symbol2.floki,.symbol2.bonk,.symbol2.corgiAI,.symbol2.babyDoge,.symbol2.mog,.symbol2.samo,.symbol2.poodl{
+        background-size: 60px;
+    }
+}
+@media (min-width: 920px){
+    .symbol2{
+        width: 70px;
+        height: 70px;
+    }
+    .symbol2.doge,.symbol2.shib,.symbol2.dogwifhat,.symbol2.floki,.symbol2.bonk,.symbol2.corgiAI,.symbol2.babyDoge,.symbol2.mog,.symbol2.samo,.symbol2.poodl{
+        background-size: 70px;
+    }
+}
+@media (min-width: 1024px){
+    .symbol2{
+        width: 70px;
+        height: 70px;
+    }
+    .symbol2.doge,.symbol2.shib,.symbol2.dogwifhat,.symbol2.floki,.symbol2.bonk,.symbol2.corgiAI,.symbol2.babyDoge,.symbol2.mog,.symbol2.samo,.symbol2.poodl{
+        background-size: 70px;
+    }
+}
+  .disappear1{
+    animation: disappear1 1.2s infinite;
+  }
+  .disappear2{
+    animation: disappear2 1.3s infinite;
+  }
+  .disappear3{
+    animation: disappear3 1.3s infinite;
+  }
+  .disappear4{
+    animation: disappear4 1.4s infinite;
+  }
+  .disappear5{
+    animation: disappear5 1.4s infinite;
+  }
+  .disappear6{
+    animation: disappear6 1.5s infinite;
+  }
+  .disappear7{
+    animation: disappear7 1.5s infinite;
+  }
+  .disappear8{
+    animation: disappear8 1.4s infinite;
+  }
+  .disappear9{
+    animation: disappear9 1.4s infinite;
+  }
+  .disappear10{
+    animation: disappear10 1.3s infinite;
+  }
+  @keyframes disappear1{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.5;
+    }
+  }
+  @keyframes disappear2{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.4;
+    }
+  }
+  @keyframes disappear3{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.3;
+    }
+  }
+  @keyframes disappear4{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.2;
+    }
+  }
+  @keyframes disappear5{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.3;
+    }
+  }
+  @keyframes disappear6{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.5;
+    }
+  }
+  @keyframes disappear7{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.4;
+    }
+  }
+  @keyframes disappear8{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.3;
+    }
+  }
+  @keyframes disappear9{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.2;
+    }
+  }
+  @keyframes disappear10{
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.3;
+    }
+  }
