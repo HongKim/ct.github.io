@@ -761,7 +761,7 @@ footer>.copy{
 @media (min-width: 1200px){
   .modal-xl{
     width: calc(100% - 80px) !important;
-    max-width: 1600px !important;
+    max-width: 1620px !important;
   }
 }
 .modal-content{
@@ -808,8 +808,117 @@ footer>.copy{
 }
 .brwBody{
   width: 100%;
-  max-height: 640px;
+  max-height: 700px;
   overflow-y: auto;
   background-color: #FFF;
   display: block;
 }
+
+/* Brackets go out */
+.brackets{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.brackets li{
+  width: 25%;
+  text-align: center;
+}
+.brackets a{
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.brackets li>a>.ico{
+  display: none;
+}
+@media (min-width: 390px){
+  .brackets a{
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px){
+  .brackets a{
+    font-size: 22px;
+  }
+}
+@media (min-width: 920px){
+  .brackets a{
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px){
+  .brackets a{
+    font-size: 26px;
+  }
+  .brackets li:nth-child(1) >a>.ico{
+    background: url(../../images/dog.png) 22% 50% no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 8px;
+  }
+  .brackets li:nth-child(2) >a>.ico{
+    background: url(../../images/bone.png) 24% 50% no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 8px;
+  }
+  .brackets li:nth-child(3) >a>.ico{
+    background: url(../../images/dog-house.png) 2% 50% no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 8px;
+  }
+  .brackets li:nth-child(4) >a>.ico{
+    background: url(../../images/paw.png) 20% 50% no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 8px;
+  }
+}
+/* .brackets a:before, .brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.brackets a:hover:before, .brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+} */
